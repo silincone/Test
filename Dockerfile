@@ -8,7 +8,5 @@ RUN git clone https://github.com/curl/curl
 
 RUN cd curl
 
-RUN mkdir build
-RUN cd build
 RUN cmake .
-RUN make
+RUN make -j4
