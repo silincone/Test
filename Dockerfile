@@ -10,5 +10,7 @@ RUN git clone https://github.com/curl/curl
 
 RUN cd curl
 
+WORKDIR /usr/curl
+
 RUN cmake .
 RUN make -j4
