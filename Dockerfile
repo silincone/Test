@@ -2,7 +2,7 @@ FROM alpine:latest
 
 RUN apk update
 RUN apk add --no-cache git
-RUN apk add cmake
+RUN apk add g++ make binutils cmake
 
 WORKDIR /usr
 
