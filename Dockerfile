@@ -1,5 +1,8 @@
 FROM alpine:latest
 
+ENV OPENSSL_ROOT_DIR=/usr/include/openssl
+ENV OPENSSL_LIB_DIR=/usr/lib
+
 RUN apk update
 
 WORKDIR /usr
